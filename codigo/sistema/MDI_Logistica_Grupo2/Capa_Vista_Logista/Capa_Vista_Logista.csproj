@@ -32,12 +32,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Capa_Controlador_Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Proyecto\is2k26pf\codigo\componentes\navegador\NavegadorMVC\CapaControladorNavegador\bin\Debug\Capa_Controlador_Navegador.dll</HintPath>
+    </Reference>
     <Reference Include="Capa_Controlador_Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\componentes\seguridad\SeguridadMVC\SeguridadMVC\CapaControlador\bin\Debug\Capa_Controlador_Seguridad.dll</HintPath>
     </Reference>
     <Reference Include="Capa_VistaAulas">
       <HintPath>..\..\DLL\mvc_aulas\Capa_VistaAulas\bin\Debug\Capa_VistaAulas.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Vista_Navegador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\componentes\navegador\NavegadorMVC\CapaVistaNavegador\bin\Debug\Capa_Vista_Navegador.dll</HintPath>
     </Reference>
     <Reference Include="Capa_Vista_Seguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -160,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Consulta_Inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

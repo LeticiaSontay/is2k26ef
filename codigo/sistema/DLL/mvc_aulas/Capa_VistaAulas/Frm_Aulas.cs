@@ -28,6 +28,7 @@ namespace Capa_VistaAulas
             };
 
             string[] columnas = {
+     "aulas",
      "Codigo_aula",
      "Nombre_Aula",
      "Estatus_Aula"
@@ -52,6 +53,11 @@ namespace Capa_VistaAulas
             navegador1.SAlias = columnas;
             navegador1.SEtiquetas = sEtiquetas;
             navegador1.mostrarDatos();
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

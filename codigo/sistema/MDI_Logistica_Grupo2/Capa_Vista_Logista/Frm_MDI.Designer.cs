@@ -35,13 +35,14 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catálogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.aULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fRMAULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Pnl_Superior.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -53,7 +54,7 @@
             this.Pnl_Superior.Controls.Add(this.label1);
             this.Pnl_Superior.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_Superior.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_Superior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Pnl_Superior.Margin = new System.Windows.Forms.Padding(2);
             this.Pnl_Superior.Name = "Pnl_Superior";
             this.Pnl_Superior.Size = new System.Drawing.Size(1028, 59);
             this.Pnl_Superior.TabIndex = 99;
@@ -80,7 +81,8 @@
             this.procesosToolStripMenuItem,
             this.herramientasToolStripMenuItem,
             this.asignacionesToolStripMenuItem,
-            this.seguridadToolStripMenuItem});
+            this.seguridadToolStripMenuItem,
+            this.fRMAULASToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 59);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 6, 2);
@@ -114,6 +116,13 @@
             this.catálogosToolStripMenuItem.Size = new System.Drawing.Size(83, 21);
             this.catálogosToolStripMenuItem.Text = "Catálogos";
             // 
+            // aULASToolStripMenuItem
+            // 
+            this.aULASToolStripMenuItem.Name = "aULASToolStripMenuItem";
+            this.aULASToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.aULASToolStripMenuItem.Text = "AULAS";
+            this.aULASToolStripMenuItem.Click += new System.EventHandler(this.aULASToolStripMenuItem_Click);
+            // 
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -134,6 +143,7 @@
             this.asignacionesToolStripMenuItem.Name = "asignacionesToolStripMenuItem";
             this.asignacionesToolStripMenuItem.Size = new System.Drawing.Size(67, 21);
             this.asignacionesToolStripMenuItem.Text = "Ayudas";
+            this.asignacionesToolStripMenuItem.Click += new System.EventHandler(this.asignacionesToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
@@ -161,12 +171,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // aULASToolStripMenuItem
+            // fRMAULASToolStripMenuItem
             // 
-            this.aULASToolStripMenuItem.Name = "aULASToolStripMenuItem";
-            this.aULASToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aULASToolStripMenuItem.Text = "AULAS";
-            this.aULASToolStripMenuItem.Click += new System.EventHandler(this.aULASToolStripMenuItem_Click);
+            this.fRMAULASToolStripMenuItem.Name = "fRMAULASToolStripMenuItem";
+            this.fRMAULASToolStripMenuItem.Size = new System.Drawing.Size(82, 21);
+            this.fRMAULASToolStripMenuItem.Text = "FRM AULAS";
+            this.fRMAULASToolStripMenuItem.Click += new System.EventHandler(this.fRMAULASToolStripMenuItem_Click);
             // 
             // Frm_MDI
             // 
@@ -179,7 +189,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Pnl_Superior);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_MDI";
             this.Load += new System.EventHandler(this.Frm_MDI_Load);
             this.Pnl_Superior.ResumeLayout(false);
@@ -213,5 +223,6 @@
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolStripMenuItem aULASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fRMAULASToolStripMenuItem;
     }
 }
