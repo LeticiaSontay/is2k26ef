@@ -11,6 +11,8 @@ using Capa_Vista_Seguridad;
 using Capa_Controlador_Seguridad;
 using System.Drawing.Imaging;
 using Capa_VistaAulas;
+using System.IO;
+using System.Reflection;
 
 
 namespace Capa_Vista_Logista
@@ -190,6 +192,45 @@ namespace Capa_Vista_Logista
             Frm_Aulas m = new Frm_Aulas();
             m.ShowDialog();
             this.Close();
+        }
+
+        private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Ruta donde está la DLL
+                string rutaDll = Path.GetDirectoryName(
+                    Assembly.GetExecutingAssembly().Location
+                );
+
+                // Ruta a la carpeta ManualNavegador
+                string rutaAyuda = Path.Combine(
+                    rutaDll,
+                    "ManualNavegador",
+                    "Ayuda_Navegador.chm"
+                );
+
+                if (!File.Exists(rutaAyuda))
+                {
+                    MessageBox.Show(
+                        "No se encontró el archivo de ayuda:\n" + rutaAyuda,
+                        "Ayuda",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    return;
+                }
+
+                Help.ShowHelp(
+                    this,
+                    rutaAyuda,
+                    "Manual_De_Usuario_Navegador.html"
+                );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al abrir la ayuda: " + ex.Message);
+            }
         }
     }
 }
