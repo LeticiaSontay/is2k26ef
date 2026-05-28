@@ -43,6 +43,9 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.fRMAULASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rEPORTEADORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Pnl_Superior.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -51,6 +54,7 @@
             // Pnl_Superior
             // 
             this.Pnl_Superior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(142)))), ((int)(((byte)(181)))));
+            this.Pnl_Superior.Controls.Add(this.textBox1);
             this.Pnl_Superior.Controls.Add(this.label1);
             this.Pnl_Superior.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_Superior.Location = new System.Drawing.Point(0, 0);
@@ -82,7 +86,9 @@
             this.herramientasToolStripMenuItem,
             this.asignacionesToolStripMenuItem,
             this.seguridadToolStripMenuItem,
-            this.fRMAULASToolStripMenuItem});
+            this.fRMAULASToolStripMenuItem,
+            this.rEPORTESToolStripMenuItem,
+            this.rEPORTEADORToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 59);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 6, 2);
@@ -178,6 +184,28 @@
             this.fRMAULASToolStripMenuItem.Text = "FRM AULAS";
             this.fRMAULASToolStripMenuItem.Click += new System.EventHandler(this.fRMAULASToolStripMenuItem_Click);
             // 
+            // rEPORTESToolStripMenuItem
+            // 
+            this.rEPORTESToolStripMenuItem.Name = "rEPORTESToolStripMenuItem";
+            this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
+            this.rEPORTESToolStripMenuItem.Text = "REPORTES";
+            this.rEPORTESToolStripMenuItem.Click += new System.EventHandler(this.rEPORTESToolStripMenuItem_Click);
+            // 
+            // rEPORTEADORToolStripMenuItem
+            // 
+            this.rEPORTEADORToolStripMenuItem.Name = "rEPORTEADORToolStripMenuItem";
+            this.rEPORTEADORToolStripMenuItem.Size = new System.Drawing.Size(99, 21);
+            this.rEPORTEADORToolStripMenuItem.Text = "REPORTEADOR";
+            this.rEPORTEADORToolStripMenuItem.Click += new System.EventHandler(this.rEPORTEADORToolStripMenuItem_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(248, 15);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 20);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "LETICIA SONTAY 9959-21-9664";
+            // 
             // Frm_MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,5 +252,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolStripMenuItem aULASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fRMAULASToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEPORTESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rEPORTEADORToolStripMenuItem;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
