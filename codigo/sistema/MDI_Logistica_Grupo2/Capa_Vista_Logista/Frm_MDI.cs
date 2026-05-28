@@ -13,6 +13,7 @@ using System.Drawing.Imaging;
 using Capa_VistaAulas;
 using System.IO;
 using System.Reflection;
+using Capa_Vista_Reporteador;
 
 
 namespace Capa_Vista_Logista
@@ -231,6 +232,22 @@ namespace Capa_Vista_Logista
             {
                 MessageBox.Show("Error al abrir la ayuda: " + ex.Message);
             }
+        }
+
+        private void rEPORTESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Reporte_modulos m = new Frm_Reporte_modulos();
+            m.ShowDialog();
+            this.Close();
+
+        }
+
+        private void rEPORTEADORToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_VistaDeReportes m = new Frm_VistaDeReportes();
+            m.ShowDialog();
+            this.Close();
+
         }
     }
 }
