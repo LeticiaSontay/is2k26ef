@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using Capa_Vista_Seguridad;
 using Capa_Controlador_Seguridad;
 using System.Drawing.Imaging;
-using Capa_Vista_Seguridad;
 using Capa_VistaAulas;
 
 
@@ -184,6 +183,13 @@ namespace Capa_Vista_Logista
             m.ShowDialog();
             this.Close();
 
+        }
+
+        private void fRMAULASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Aulas m = new Frm_Aulas();
+            m.ShowDialog();
+            this.Close();
         }
     }
 }

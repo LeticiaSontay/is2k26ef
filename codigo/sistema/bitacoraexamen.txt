@@ -1,0 +1,17 @@
+commit a80b3c8b404e64dc476b6769cac845071845edda
+Author: Leticia Sontay <lsontayc1@miumg.edu.gt>
+Date:   Thu May 28 11:11:45 2026 -0600
+
+    Se agrega el modulo de AULAS al MDI
+
+commit 5385dc4ccfdec0f673af55c45e4b623989eb1430
+Author: Leticia Sontay <lsontayc1@miumg.edu.gt>
+Date:   Thu May 28 11:07:55 2026 -0600
+
+    Se agrega el modulo seguridad en MDI
+
+commit 82ad84ad5c545a770ddce7dc9dc0628ff18ec6bd
+Author: Leticia Sontay <lsontayc1@miumg.edu.gt>
+Date:   Thu May 28 10:47:26 2026 -0600
+
+    Se crea manetnimiento de Aulas, se agrega referencia de navegador y se agrega codigo de navegador con la tabla aulas
